@@ -54,7 +54,7 @@ public class EntityPrehistoricFloraThalassodromeus extends EntityPrehistoricFlor
 
 	@Override
 	public int getTalkInterval() {
-		return 90;
+		return 350;
 	}
 
 	@Override
@@ -271,6 +271,11 @@ public class EntityPrehistoricFloraThalassodromeus extends EntityPrehistoricFlor
 	}
 
 	@Override
+	public float interimRandomness(){
+		return 0.1F;
+	}
+
+	@Override
 	public String getTexture() {
 		return this.getTexture();
 	}
@@ -334,7 +339,7 @@ public class EntityPrehistoricFloraThalassodromeus extends EntityPrehistoricFlor
 
 	@Override
 	public String[] getFoodOreDicts() {
-		return ArrayUtils.addAll(DietString.FISH);
+		return ArrayUtils.addAll(DietString.MEAT);
 	}
 
 	protected void initEntityAI() {
